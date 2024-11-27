@@ -1,0 +1,9 @@
+# Ignore files
+*.env
+*.pyc
+secrets.toml
+test.ipynb
+
+# Ignore folders
+venv/
+__pycache__/
