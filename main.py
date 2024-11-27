@@ -12,7 +12,7 @@ from src.settings import *
 from src.parameters import *
 
 
-RUN_LOCAL = True
+RUN_LOCAL = False
 
 if not RUN_LOCAL:
     import pysqlite3
@@ -279,7 +279,7 @@ def main():
         addMessage("assistant", response)
 
     # After a certain time, send an email with the logs
-    # checkForEmail2Send(REPO_PATH + LOG_CHAT2EMAIL_PATH, subject="Beta SF chat: Q&A ")
+    checkForEmail2Send(REPO_PATH + LOG_CHAT2EMAIL_PATH, subject="Beta SF chat: Q&A ")
 
 # Run the main function
 if __name__ == "__main__":
