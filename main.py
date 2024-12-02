@@ -54,8 +54,6 @@ def search_in_database(args):
     retrived_from_vdb = database.similarity_search_with_score(problem, k=K_VALUE_SEARCH)
     ean_list = [retrived_from_vdb[i][0].metadata['EAN'] for i in range(K_VALUE_SEARCH)]
     data = searchByEan(STOCK_PATH, ean_list)
-    for key, value in data.items():
-        print(key, value)
     if len(data) > 0:
         i = 0
         context = []
