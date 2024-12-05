@@ -1702,3 +1702,37 @@
 2024-12-02 10:08:53 - DEBUG - Mostrando mensaje del rol 'user'
 2024-12-02 10:08:53 - DEBUG - Mensaje del usuario mostrado correctamente.
 2024-12-02 10:09:34 - INFO - [id:567dad99-3e4d-454b-a7da-9f02ef139d10] ASSISTANT: Aquí te presento una selección de productos que pueden ayudarte a tratar el acné: 1. Acneiqué H20 de Cepage: Es una solución micelar para pieles mixtas a grasas que limpia, desmaquilla y matifica. Contiene activos como Manitol y Xilitol que son hidratantes y calmantes, Zinc como antiséptico, extracto de Iris como seborregulador y Retinol para favorecer la renovación celular. El ácido láctico contribuye en la mejora de la textura de la piel. Precio: $10,000. Stock: 5. No tiene promoción. 2. Isdin Acniben Teen Skin Gel Limpiador Matificante 400ml: Este gel limpia la piel grasa o con tendencia acneica sin resecar. Desobstruye los poros, elimina las impurezas y reduce el exceso de sebo, dejando la piel fresca y matificada. Precio: $62,839. Stock: 4. No tiene promoción. 3. Isdin Acniben Ts Gel Crema Equilibrante 40ml: Ayuda a reducir las imperfecciones y a frenar la aparición del comedón. Matifica y equilibra la piel gracias a su contenido en zincamida. Precio: $53,100. Stock: 4. No tiene p...
+2024-12-05 09:54:22 - DEBUG - Imagen del encabezado cargada desde figures/header_logo.png
+2024-12-05 09:54:22 - DEBUG - Imagen del encabezado cargada desde figures/header_logo.png
+2024-12-05 09:54:22 - INFO - Encabezado configurado correctamente.
+2024-12-05 09:54:22 - INFO - Encabezado configurado correctamente.
+2024-12-05 09:54:22 - INFO - [id:ac04c856-ae9f-4abc-84fb-17a9dcbf6ca4] ASSISTANT: Hola, ¿en qué puedo ayudarte hoy?
+2024-12-05 09:54:22 - INFO - [id:ac04c856-ae9f-4abc-84fb-17a9dcbf6ca4] ASSISTANT: Hola, ¿en qué puedo ayudarte hoy?
+2024-12-05 09:54:22 - INFO - Imprimiendo toda la conversación almacenada.
+2024-12-05 09:54:22 - INFO - Imprimiendo toda la conversación almacenada.
+2024-12-05 09:54:22 - DEBUG - Mostrando mensaje del rol 'assistant'
+2024-12-05 09:54:22 - DEBUG - Mostrando mensaje del rol 'assistant'
+2024-12-05 09:54:22 - DEBUG - Mensaje del bot mostrado correctamente.
+2024-12-05 09:54:22 - DEBUG - Mensaje del bot mostrado correctamente.
+2024-12-05 09:54:22 - INFO - Toda la conversación ha sido impresa correctamente con 1 mensajes.
+2024-12-05 09:54:22 - INFO - Toda la conversación ha sido impresa correctamente con 1 mensajes.
+2024-12-05 09:54:27 - DEBUG - Imagen del encabezado cargada desde figures/header_logo.png
+2024-12-05 09:54:27 - DEBUG - Imagen del encabezado cargada desde figures/header_logo.png
+2024-12-05 09:54:27 - INFO - Encabezado configurado correctamente.
+2024-12-05 09:54:27 - INFO - Encabezado configurado correctamente.
+2024-12-05 09:54:27 - INFO - Imprimiendo toda la conversación almacenada.
+2024-12-05 09:54:27 - INFO - Imprimiendo toda la conversación almacenada.
+2024-12-05 09:54:27 - DEBUG - Mostrando mensaje del rol 'assistant'
+2024-12-05 09:54:27 - DEBUG - Mostrando mensaje del rol 'assistant'
+2024-12-05 09:54:27 - DEBUG - Mensaje del bot mostrado correctamente.
+2024-12-05 09:54:27 - DEBUG - Mensaje del bot mostrado correctamente.
+2024-12-05 09:54:27 - INFO - Toda la conversación ha sido impresa correctamente con 1 mensajes.
+2024-12-05 09:54:27 - INFO - Toda la conversación ha sido impresa correctamente con 1 mensajes.
+2024-12-05 09:54:27 - INFO - [id:ac04c856-ae9f-4abc-84fb-17a9dcbf6ca4] USER: acné
+2024-12-05 09:54:27 - INFO - [id:ac04c856-ae9f-4abc-84fb-17a9dcbf6ca4] USER: acné
+2024-12-05 09:54:27 - DEBUG - Mostrando mensaje del rol 'user'
+2024-12-05 09:54:27 - DEBUG - Mostrando mensaje del rol 'user'
+2024-12-05 09:54:27 - DEBUG - Mensaje del usuario mostrado correctamente.
+2024-12-05 09:54:27 - DEBUG - Mensaje del usuario mostrado correctamente.
+2024-12-05 09:55:06 - INFO - [id:ac04c856-ae9f-4abc-84fb-17a9dcbf6ca4] ASSISTANT: Aquí te presento algunas opciones de productos para tratar el acné: 1. Isdin Acniben Teen Skin Gel Limpiador Matificante 400ml: Este gel limpia la piel grasa o con tendencia acneica sin resecar. Desobstruye los poros, elimina las impurezas y reduce el exceso de sebo, dejando la piel fresca y matificada. Se aplica mañana y noche como primer paso de la rutina facial. Su precio es de $62839.0 y actualmente tenemos 4 en stock. 2. Isdin Acniben Ts Gel Crema Equilibrante 40ml: Ayuda a reducir las imperfecciones y a frenar la aparición del comedón. Matifica y equilibra la piel gracias a su contenido en zincamida. Se aplica a diario una cantidad suficiente de gel-crema, mañana y/o noche. Su precio es de $53100.0 y actualmente tenemos 4 en stock. 3. Acneiqué de Cepage: Es una crema gel seborreguladora e hidratante especialmente formulada para pieles oleosas y/o con tendencia al acné. Contiene activos con propiedades antisépticas y antienrrojecimiento. Se aplica sobre la piel limpia y seca del r...
+2024-12-05 09:55:06 - INFO - [id:ac04c856-ae9f-4abc-84fb-17a9dcbf6ca4] ASSISTANT: Aquí te presento algunas opciones de productos para tratar el acné: 1. Isdin Acniben Teen Skin Gel Limpiador Matificante 400ml: Este gel limpia la piel grasa o con tendencia acneica sin resecar. Desobstruye los poros, elimina las impurezas y reduce el exceso de sebo, dejando la piel fresca y matificada. Se aplica mañana y noche como primer paso de la rutina facial. Su precio es de $62839.0 y actualmente tenemos 4 en stock. 2. Isdin Acniben Ts Gel Crema Equilibrante 40ml: Ayuda a reducir las imperfecciones y a frenar la aparición del comedón. Matifica y equilibra la piel gracias a su contenido en zincamida. Se aplica a diario una cantidad suficiente de gel-crema, mañana y/o noche. Su precio es de $53100.0 y actualmente tenemos 4 en stock. 3. Acneiqué de Cepage: Es una crema gel seborreguladora e hidratante especialmente formulada para pieles oleosas y/o con tendencia al acné. Contiene activos con propiedades antisépticas y antienrrojecimiento. Se aplica sobre la piel limpia y seca del r...
