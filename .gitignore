@@ -3,6 +3,7 @@
 *.pyc
 secrets.toml
 test.ipynb
+tutorial.md
 
 # Ignore folders
 venv/
