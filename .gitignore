@@ -4,6 +4,7 @@
 secrets.toml
 test.ipynb
 tutorial.md
+credentials.json
 
 # Ignore folders
 venv/

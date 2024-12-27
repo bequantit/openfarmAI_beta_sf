@@ -193,6 +193,8 @@ class EventHandler(AssistantEventHandler):
                 "args": json.loads(tool.function.arguments)
             })
         for function in function_calls:
+            name = function["name"]
+            print(f"Funcion calling: {name}")
             if function["name"] == "search_in_database":
                 tool_outputs.append({
                     "tool_call_id": function["id"], 
@@ -251,6 +253,7 @@ class EventHandler(AssistantEventHandler):
                     container = st.empty()
                     current_text = ""
                     for text in stream.text_deltas:
+                        text = text.replace('$', '&#36;')
                         current_text += text
                         container.markdown(f'<div class="chat-message bot-message bot-message ul">{current_text}</div>', unsafe_allow_html=True)
                         time.sleep(0.05)

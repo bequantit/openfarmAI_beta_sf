@@ -194,6 +194,7 @@ def removeBoldItalic(text: str) -> str:
     try:
         lines = text.splitlines()
         modified_lines = [re.sub(r'(\*\*.*?\*\*|\*.*?\*)', processMatch, line) for line in lines]
+        modified_lines = [line.replace('$', '&#36;') for line in modified_lines]
         modified_text = '\n'.join(modified_lines)
         logging.info("El proceso de eliminación de formato se completó con éxito.")
         return modified_text

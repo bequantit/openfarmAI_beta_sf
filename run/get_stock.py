@@ -1,5 +1,6 @@
-import os, gspread
+import os, gspread, json
 import pandas as pd
+import streamlit as st
 from googleapiclient.errors import HttpError
 from google.oauth2.service_account import Credentials
 
@@ -12,6 +13,9 @@ SCOPES = [
 ]
 
 # Autenticación con la cuenta de servicio
+credentials = json.loads(st.secrets["credentials"]["json"])
+with open(SERVICE_ACCOUNT_FILE, "w") as json_file:
+    json.dump(credentials, json_file, indent=4)
 credentials = Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 
 # Crear cliente de gspread con las credenciales
