@@ -108,3 +108,29 @@ reinforces_style = """
         p { font-size: 20px; }
         </style>
     """
+
+menu_style = """
+    <style>
+    .dropdown-container {
+        display: flex;
+        justify-content: center; /* Centrar horizontalmente en la pantalla */
+        align-items: center;    /* Alinear verticalmente los elementos */
+        margin-top: 50px;       /* Espacio superior */
+    }
+    .dropdown-label {
+        font-size: 16px;
+        font-family: sans-serif;
+        font-weight: bold;
+        margin-right: -5px;    /* Espacio entre el texto y el menú */
+        color: #333333;
+    }
+    .stSelectbox {
+        margin-top: -40px; /* Ajusta la separación del menú hacia arriba */
+        width: 300px !important; /* Ancho personalizado del menú desplegable */
+        font-size: 16px !important;
+        font-family: 'Arial', sans-serif !important;
+        font-weight: bold !important;
+        color: #333333 !important;
+    }
+    </style>
+"""

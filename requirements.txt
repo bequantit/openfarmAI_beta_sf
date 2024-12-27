@@ -1,7 +1,9 @@
 pandas
 pysqlite3-binary
 secure-smtplib
-google-api-python-client 
+gspread
+google-auth
+google-api-python-client
 google-auth-httplib2
 google-auth-oauthlib
 langchain==0.1.14

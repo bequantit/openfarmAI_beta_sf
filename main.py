@@ -1,5 +1,6 @@
 import os, sys, time, csv
 import uuid, json, subprocess
+import pandas as pd
 import streamlit as st
 from openai import OpenAI
 from typing_extensions import override
@@ -80,6 +81,42 @@ def how_many_products_in_stock():
             products += 1 if stock > 0 else 0
     file.close()
     return f"Hay {products} productos en stock."
+
+def how_many_products_in_sale():
+    df = pd.read_csv(STOCK_PATH)
+    df.columns = df.columns.str.lower()
+    df['promo'] = df['promo'].str.lower()
+    no_sale_value = "no promo" # filter by sale option
+    df = df[df['promo'] != no_sale_value]
+    products_on_sale = len(df)
+    return f"Hay {products_on_sale} productos en promoción."
+
+def search_products_in_sale():
+    # Get products from chroma database
+    db = database.get()
+    db = {metadata['EAN']: document for metadata, document in zip(db['metadatas'], db['documents'])}
+    df_db = pd.DataFrame(list(db.items()), columns=['ean', 'descripción'])
+    
+    # Get products info from stock spreadsheet
+    df_stock = pd.read_csv(STOCK_PATH)
+    df_stock.columns = df_stock.columns.str.lower()
+    df_stock['promo'] = df_stock['promo'].str.lower()
+    no_sale_value = "no promo" # filter by sale option
+    df_stock = df_stock[df_stock['promo'] != no_sale_value]
+
+    # Get common rows base on EAN
+    df_db_filtered = df_db[df_db['ean'].isin(df_stock['ean'])]
+    df_stock_filtered = df_stock[df_stock['ean'].isin(df_db['ean'])]
+
+    # Create context
+    context = []
+    for product, data in zip(df_db_filtered.itertuples(index=False), df_stock_filtered.itertuples(index=False)):
+        description = product['descripción']
+        features = f"Stock: {data['stock']}. Precio: ${data['precio']}. Promoción: {data['promo']}"
+        context.append(f"{description} {features}")
+    context = '\n'.join(context[:5])
+    output = f"Contexto: {context}"
+    return output
 
 def how_many_products_with_stock_below_threshold(args):
     products = 0
@@ -188,6 +225,14 @@ class EventHandler(AssistantEventHandler):
                 tool_outputs.append({
                     "tool_call_id": function["id"], 
                     "output": how_many_products_with_stock_between_thresholds(function["args"])})
+            elif function["name"] == "search_products_in_sale":
+                tool_outputs.append({
+                    "tool_call_id": function["id"], 
+                    "output": search_products_in_sale()})
+            elif function["name"] == "how_many_products_in_sale":
+                tool_outputs.append({
+                    "tool_call_id": function["id"], 
+                    "output": how_many_products_in_sale()})
         
         # Submit all tool_outputs at the same time
         self.submit_tool_outputs(tool_outputs, run_id)
@@ -236,15 +281,35 @@ def main():
         thread = client.beta.threads.create()
         st.session_state.thread_id = thread.id
 
+    # Streamlit app configuration
+    st.html(streamlit_style)
+    st.markdown(reinforces_style, unsafe_allow_html=True)
+    st.markdown(menu_style, unsafe_allow_html=True)
+    setHeader(IMAGE_LOGO, HEADER_CAPTION)
+
+    # Dropdown menu for selecting "Farmacia"
+    pharma_headquarters = {
+        "": REPO_PATH + "/database/stock.csv",
+        "San Fernando": REPO_PATH + "/database/stock.csv",
+        "Martínez": REPO_PATH + "/database/stock.csv",
+        "Munro": REPO_PATH + "/database/stock.csv",
+    }
+
+    # Contenedor para centrar el menú desplegable
+    with st.container():
+        st.markdown('<div class="dropdown-container">', unsafe_allow_html=True)
+        st.markdown('<span class="dropdown-label">Sede:</span>', unsafe_allow_html=True)
+        pharma_selected = st.selectbox("Sede", pharma_headquarters.keys(), index=0, label_visibility="hidden")
+        st.markdown('</div>', unsafe_allow_html=True)
+
+    # Update STOCK_PATH based on the selected headquarter
+    global STOCK_PATH
+    STOCK_PATH = pharma_headquarters[pharma_selected]
+
     # Get stock data just once
     if "is_stock" not in st.session_state:
         subprocess.run([f"{sys.executable}", RUN_STOCK_PATH], check=True)
         st.session_state.is_stock = True
-
-    # Streamlit app configuration
-    st.html(streamlit_style)
-    st.markdown(reinforces_style, unsafe_allow_html=True)
-    setHeader(IMAGE_LOGO, HEADER_CAPTION)
 
     # Add initial message and print the conversation
     if "messages" not in st.session_state:
