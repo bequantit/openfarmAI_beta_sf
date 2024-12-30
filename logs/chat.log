@@ -2191,3 +2191,69 @@
 2024-12-27 17:11:50 - DEBUG - Mostrando mensaje del rol 'user'
 2024-12-27 17:11:50 - DEBUG - Mensaje del usuario mostrado correctamente.
 2024-12-27 17:12:36 - INFO - [id:3abde31b-35c2-4b37-ae58-661da5085c3d] ASSISTANT: Aquí te dejo algunas opciones de productos para el acné: 1. Isdin Acniben Teen Skin Gel Limpiador Matificante 400ml: Este gel proporciona una higiene profunda gracias a su fórmula con ácido salicílico. Limpia la piel grasa o con tendencia acneica sin resecar, desobstruye los poros, elimina las impurezas y reduce el exceso de sebo, dejando la piel fresca y matificada. Precio: &#36;62839. Stock: 4 unidades. Lamentablemente, este producto no se encuentra en promoción en este momento. 2. Isdin Acniben Ts Gel Crema Equilibrante 40ml: Este gel crema ayuda a reducir las imperfecciones y a frenar la aparición del comedón. Matifica y equilibra la piel gracias a su contenido en zincamida. Precio: &#36;53100. Stock: 4 unidades. Este producto tampoco se encuentra en promoción en este momento. 3. Acneiqué Crema-Gel: Esta crema gel seborreguladora e hidratante está especialmente formulada para pieles oleosas y/o con tendencia al acné. Contiene activos con propiedades antisépticas y antienrrojecimien...
+2024-12-30 14:31:04 - DEBUG - Imagen del encabezado cargada desde figures/header_logo.png
+2024-12-30 14:31:04 - DEBUG - Imagen del encabezado cargada desde figures/header_logo.png
+2024-12-30 14:31:04 - INFO - Encabezado configurado correctamente.
+2024-12-30 14:31:04 - INFO - Encabezado configurado correctamente.
+2024-12-30 14:31:10 - INFO - [id:f0ccc828-a07f-4ba8-948c-0f42e144c17c] ASSISTANT: Hola, ¿en qué puedo ayudarte hoy?
+2024-12-30 14:31:10 - INFO - [id:f0ccc828-a07f-4ba8-948c-0f42e144c17c] ASSISTANT: Hola, ¿en qué puedo ayudarte hoy?
+2024-12-30 14:31:10 - INFO - Imprimiendo toda la conversación almacenada.
+2024-12-30 14:31:10 - INFO - Imprimiendo toda la conversación almacenada.
+2024-12-30 14:31:10 - DEBUG - Mostrando mensaje del rol 'assistant'
+2024-12-30 14:31:10 - DEBUG - Mostrando mensaje del rol 'assistant'
+2024-12-30 14:31:10 - DEBUG - Mensaje del bot mostrado correctamente.
+2024-12-30 14:31:10 - DEBUG - Mensaje del bot mostrado correctamente.
+2024-12-30 14:31:10 - INFO - Toda la conversación ha sido impresa correctamente con 1 mensajes.
+2024-12-30 14:31:10 - INFO - Toda la conversación ha sido impresa correctamente con 1 mensajes.
+2024-12-30 14:31:27 - DEBUG - Imagen del encabezado cargada desde figures/header_logo.png
+2024-12-30 14:31:27 - DEBUG - Imagen del encabezado cargada desde figures/header_logo.png
+2024-12-30 14:31:27 - INFO - Encabezado configurado correctamente.
+2024-12-30 14:31:27 - INFO - Encabezado configurado correctamente.
+2024-12-30 14:31:27 - INFO - Imprimiendo toda la conversación almacenada.
+2024-12-30 14:31:27 - INFO - Imprimiendo toda la conversación almacenada.
+2024-12-30 14:31:27 - DEBUG - Mostrando mensaje del rol 'assistant'
+2024-12-30 14:31:27 - DEBUG - Mostrando mensaje del rol 'assistant'
+2024-12-30 14:31:27 - DEBUG - Mensaje del bot mostrado correctamente.
+2024-12-30 14:31:27 - DEBUG - Mensaje del bot mostrado correctamente.
+2024-12-30 14:31:27 - INFO - Toda la conversación ha sido impresa correctamente con 1 mensajes.
+2024-12-30 14:31:27 - INFO - Toda la conversación ha sido impresa correctamente con 1 mensajes.
+2024-12-30 14:31:27 - INFO - [id:f0ccc828-a07f-4ba8-948c-0f42e144c17c] USER: cuantos productos hay en oferta?
+2024-12-30 14:31:27 - INFO - [id:f0ccc828-a07f-4ba8-948c-0f42e144c17c] USER: cuantos productos hay en oferta?
+2024-12-30 14:31:27 - DEBUG - Mostrando mensaje del rol 'user'
+2024-12-30 14:31:27 - DEBUG - Mostrando mensaje del rol 'user'
+2024-12-30 14:31:27 - DEBUG - Mensaje del usuario mostrado correctamente.
+2024-12-30 14:31:27 - DEBUG - Mensaje del usuario mostrado correctamente.
+2024-12-30 14:31:40 - INFO - [id:f0ccc828-a07f-4ba8-948c-0f42e144c17c] ASSISTANT: Actualmente, hay 829 productos de dermocosmética en promoción.
+2024-12-30 14:31:40 - INFO - [id:f0ccc828-a07f-4ba8-948c-0f42e144c17c] ASSISTANT: Actualmente, hay 829 productos de dermocosmética en promoción.
+2024-12-30 14:40:21 - DEBUG - Imagen del encabezado cargada desde figures/header_logo.png
+2024-12-30 14:40:21 - DEBUG - Imagen del encabezado cargada desde figures/header_logo.png
+2024-12-30 14:40:21 - INFO - Encabezado configurado correctamente.
+2024-12-30 14:40:21 - INFO - Encabezado configurado correctamente.
+2024-12-30 14:40:21 - INFO - Imprimiendo toda la conversación almacenada.
+2024-12-30 14:40:21 - INFO - Imprimiendo toda la conversación almacenada.
+2024-12-30 14:40:21 - DEBUG - Mostrando mensaje del rol 'assistant'
+2024-12-30 14:40:21 - DEBUG - Mostrando mensaje del rol 'assistant'
+2024-12-30 14:40:21 - DEBUG - Mensaje del bot mostrado correctamente.
+2024-12-30 14:40:21 - DEBUG - Mensaje del bot mostrado correctamente.
+2024-12-30 14:40:21 - DEBUG - Mostrando mensaje del rol 'user'
+2024-12-30 14:40:21 - DEBUG - Mostrando mensaje del rol 'user'
+2024-12-30 14:40:21 - DEBUG - Mensaje del usuario mostrado correctamente.
+2024-12-30 14:40:21 - DEBUG - Mensaje del usuario mostrado correctamente.
+2024-12-30 14:40:21 - DEBUG - Mostrando mensaje del rol 'assistant'
+2024-12-30 14:40:21 - DEBUG - Mostrando mensaje del rol 'assistant'
+2024-12-30 14:40:21 - DEBUG - Mensaje del bot mostrado correctamente.
+2024-12-30 14:40:21 - DEBUG - Mensaje del bot mostrado correctamente.
+2024-12-30 14:40:21 - INFO - Toda la conversación ha sido impresa correctamente con 3 mensajes.
+2024-12-30 14:40:21 - INFO - Toda la conversación ha sido impresa correctamente con 3 mensajes.
+2024-12-30 14:40:27 - INFO - [id:f0ccc828-a07f-4ba8-948c-0f42e144c17c] USER: hola
+2024-12-30 14:40:27 - INFO - [id:f0ccc828-a07f-4ba8-948c-0f42e144c17c] USER: hola
+2024-12-30 14:40:27 - DEBUG - Mostrando mensaje del rol 'user'
+2024-12-30 14:40:27 - DEBUG - Mostrando mensaje del rol 'user'
+2024-12-30 14:40:27 - DEBUG - Mensaje del usuario mostrado correctamente.
+2024-12-30 14:40:27 - DEBUG - Mensaje del usuario mostrado correctamente.
+2024-12-30 14:40:34 - DEBUG - Mostrando mensaje del rol 'assistant'
+2024-12-30 14:40:34 - DEBUG - Mostrando mensaje del rol 'assistant'
+2024-12-30 14:40:34 - DEBUG - Mostrando mensaje del bot en modo stream
+2024-12-30 14:40:34 - DEBUG - Mostrando mensaje del bot en modo stream
+2024-12-30 14:40:34 - INFO - [id:f0ccc828-a07f-4ba8-948c-0f42e144c17c] ASSISTANT: ¡Hola! ¿Cómo puedo ayudarte hoy en el mundo de la dermocosmética?
+2024-12-30 14:40:34 - INFO - [id:f0ccc828-a07f-4ba8-948c-0f42e144c17c] ASSISTANT: ¡Hola! ¿Cómo puedo ayudarte hoy en el mundo de la dermocosmética?

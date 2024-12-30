@@ -320,6 +320,18 @@ def main():
         addMessage("assistant", INITIAL_MESSAGE)
     printConversation()    
 
+    # Initialize stock update timer
+    if "last_stock_update" not in st.session_state:
+        st.session_state.last_stock_update = time.time()
+
+    # Check if it's time to update stock
+    if time.time() - st.session_state.last_stock_update >= STOCK_UPDATE_INTERVAL:
+        try:
+            subprocess.run([f"{sys.executable}", RUN_STOCK_PATH], check=True)
+            st.session_state.last_stock_update = time.time()
+        except Exception as e:
+            print(e)
+
     # User input
     if prompt_input := st.chat_input(ASKING_PROMPT):
         addMessage("user", prompt_input)

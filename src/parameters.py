@@ -14,6 +14,9 @@ USER_AVATAR = "figures/avatar_user.png"     # user avatar figure
 BOT_AVATAR  = "figures/avatar_bot.png"      # assistant avatar figure
 IMAGE_LOGO  = "figures/header_logo.png"     # logo image
 
+# Stock parameters
+STOCK_UPDATE_INTERVAL = 3600  # Ejemplo: 3600 segundos (1 hora)
+
 # Email parameters
 TIMEOUT     = 600                               # send email timeout in seconds
 FROM_EMAIL  = "quantitopenfarma@gmail.com"      # email sender
